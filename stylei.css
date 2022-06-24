@@ -1,0 +1,620 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Recursive', sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    /* height: 100000px; */
+    width: 100%;
+}
+nav{
+    height: 50px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 10000;
+}
+nav .logo{
+    color: rgb(18, 97, 225) ;
+    font-size: 33px;
+    font-family: 'Style Script', cursive;
+    font-weight: 900;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 580;
+    letter-spacing: 1px;
+
+}
+nav ul li a:hover{
+    color: rgb(18, 97, 225) ;
+ }
+.activeh{
+    color: rgb(18, 97, 225) ;
+ }
+nav .menu-bar i{
+    color:black;
+    font-size: 19px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+
+.home{
+    background: url("images/backg2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.home .h1{
+    flex:50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.home .h1 img{
+    height:600px; 
+    width:500px;
+ }
+.home .h2{
+   margin: auto auto;
+   flex:50%;
+}
+.homecontent{
+    text-align: center;
+}
+.h2 .homecontent #hello{
+    font-size:30px
+}
+.h2 .homecontent #name{
+    font-size: 70px;
+}
+.h2 .homecontent #cse{
+    font-size: 30px;
+}
+
+/* button css */
+ .mybtn{
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgb(18, 97, 225);
+    border: rgb(18, 97, 225) 0.123em solid;
+    border-radius: 0.25em;
+    padding: 0.75em 1em;
+    box-shadow: inset 0 0 0.5em rgb(18, 97, 225),
+    0 0 1.5em rgb(18, 97, 225);
+}
+ .mybtn:hover{
+   background-color: white;
+   color:rgb(18, 97, 225) ;
+   box-shadow: none;
+}
+
+
+.heading{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0;
+    padding-top: 50px;
+}
+/* about me css  */
+#about-id{
+    background: url("images/backg2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+}
+
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.about-img,
+.about-content{
+    width: 50%;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+.about-content{
+    padding-left: 40px;
+}
+.about-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-img .img-inner{
+    width: 70%;
+   
+    /* border: 2px solid red; */
+
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+}
+.about-content h2{
+    font-size: 40px;
+    color: rgb(18, 97, 225);
+}
+.about-content p{
+    font-size: 35px;
+}
+/* myskills css  */
+#skills{
+    background: url("images/backg2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+
+}
+.skills-container{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.skills-container  .skills-title,
+.skills-container  .skills-content{
+    /* border: 2px solid red; */
+    max-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.skills-container  .skills-box{
+    background-color: aliceblue;
+    border-radius: 10px;
+    height: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0 0 10px  rgb(18, 97, 225);
+}
+.skills-container  .skills-title{
+    margin-bottom: 12px;
+}
+.skills-container .skills-box .skill-img{
+    /* border: 2px solid red; */
+    width: 150px;
+    height: 150px;
+}
+.skills-box .skill-img img{
+    /* border: 2px solid greenyellow; */
+    /* border-radius: 50%; */
+    position: relative;
+    width: 90%;
+    height: 90%;
+    transition: transform 0.2s linear;
+}
+.skill-img img:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+}
+.skills-title .skill-img h2{
+    position:static;
+    font-size: 20px;
+}
+.skills-container  .skills-content i{
+    color: rgb(67, 61, 61);
+    
+        /* box-shadow: 0 0 10px  rgb(18, 97, 225); */
+}
+/* certificates css*/
+#cert-id{
+    background: url("images/backg2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+}
+.certificates {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificates .cert-box {
+     text-align: center;
+}
+
+.certificates .cert-box img{
+    /* border: 2px solid red; */
+    height: 250px;
+    width: 300px;
+    margin:50px;
+    /* cursor: pointer; */
+    transition: transform 0.2s linear;
+    box-shadow: 0 0 10px  rgb(18, 97, 225);
+}
+.cert-box:hover img{
+    transform: scale(1.05);
+}
+
+/* profiles css */
+#profile-id{
+    background: url("images/backg2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+}
+.profiles{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.maincontainer{
+    text-align: center;
+    position: relative;
+    width: 250px;
+    height: 200px; 
+    margin:30px;
+    border-radius: 12px;
+}
+.maincontainer .card{
+    width: 100%;
+    height: 100%;
+    transform-style:preserve-3d ;
+    transition: all 0.2s ease;
+    border-radius: 12px;
+    box-shadow: 0 0 4px   rgb(18, 97, 225);
+}
+.card .front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    position: absolute;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* background: #ffffffc9; */
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.card .back{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* background: #ffffffc9; */
+    transform: rotateY(180deg);
+}
+.card .front .image{
+    display: flex;
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    border-radius: 35%;
+}
+.card .front .image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.back .back-content .mybtn{
+    margin-top: 20px;
+}
+
+/* contact css */
+#contact-id{
+    background: url("images/backg2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.contact-container{
+    margin: 100px;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 40px 40px;
+    box-shadow:0 0 0.3em rgb(18, 97, 225);
+}
+.contact-container .contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-container .contact-content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 15px;
+}
+.contact-content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+.contact-content .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+.contact-content .left-side .details i{
+    font-size: 30px;
+    color: rgb(18, 97, 225);
+    margin-bottom: 10px;
+}
+.contact-content .left-side .details .left-topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.contact-content .left-side .details .left-text-one,
+.contact-content .left-side .details .left-text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.contact-container .contact-content .right-side{
+    width: 75%;
+    margin-left: 55px;
+}
+.contact-content .right-side .right-topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: rgb(18, 97, 225);
+}
+.right-side .c-input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.right-side .c-input-box input,
+.right-side .c-input-box textarea{
+    outline: none;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+.right-side .message-box{
+    min-height: 110px;
+}
+.right-side .button button{
+    padding: 7px;
+    background-color: rgb(18, 97, 225);
+    color: white;
+    border: 0px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 10px   rgb(18, 97, 225);
+}
+.right-side .button button:hover{
+    background: white;
+    color: rgb(18, 97, 225);
+    
+}
+.right-side .button{
+    display: inline-block;
+}
+.right-side .button a{
+    padding: 8px;
+}
+/* media quiries */
+ @media (max-width:800px){
+   html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+   }
+    nav .menu-bar i{
+        display: block;
+    }
+    #click:checked ~ .menu-bar i::before{
+        content: "\f00d";
+    }
+    nav ul{
+        position: fixed;
+        top:50px;
+        right: -100% ;
+        background: rgb(255, 255, 255);
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked ~ ul{
+        right:0%;
+    }
+    nav ul li:checked ~ ul{
+        right: 100%;
+    }
+    nav ul li{
+        margin:40px 0;
+    }
+    nav ul li a{
+        display: block;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .home .h1 img{
+        /* display: none; */
+       width: 290px;
+       height: 500px;
+       margin: 0px;
+    }
+
+    .certificates .cert-box img{
+        height: 200px;
+        width: 250px;
+    }
+    /* contact from  */
+    .contact-container{
+        margin: 40px 0;
+        height: 100%;
+    }
+    .contact-container .contact-content{
+        flex-direction: column-reverse;
+    }
+    .contact-container .contact-content .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contact-container .contact-content .left-side::before{
+        display: none;
+    }
+    .contact-container .contact-content .right-side{
+        width: 100%;
+        margin-left: 0px;
+    }
+    /* button  */
+    .mybtn{
+        font-size: 0.9rem;
+        padding: 0.6em 0.7em;
+    }
+
+    /* myskills  */
+    .skills-container  .skills-title,
+    .skills-container  .skills-content{
+        width: 150px;
+    }
+    .skills-container .skills-box .skill-img{
+        /* border: 2px solid red; */
+        width: 130px;
+        height: 130px;
+    }
+    .skills-title .skill-img h2{
+        font-size: 16px;
+    }
+    .skills-box .skills-content p{
+        font-size: 15px;
+    }
+    /* about me  */
+    .about-container{
+        flex-direction: column-reverse;
+    }
+    .about-img,
+     .about-content{
+    width: 90%;
+   }
+   .about-content{
+    padding-left: 0px;
+    }
+    .about-content h2{
+        font-size: 30px;
+    }
+    .about-content p{
+        font-size: 25px;
+    }
+ }
+ @media (max-width:330px){
+    .contact-container .contact-content .right-side{
+        width: 100%;
+        margin-left:-20px;
+    }
+    .right-side .c-input-box{
+        height: 30px;
+        width: 130%;
+    }
+    .right-side .c-input-box input,
+    .right-side .c-input-box textarea{
+        width: 100%;
+    }
+    nav{
+        height: 30px;
+    }
+    nav .logo{
+        font-size:25px
+    }
+    nav .menu-bar{
+        font-size: 20px;
+    }
+    .home .h1 img{
+        height:300px; 
+        width:250px;
+     }
+    .h2 .homecontent #hello{
+        font-size: 20px;
+    }
+    .h2 .homecontent #name{
+        font-size: 60px;
+    }
+    .h2 .homecontent #cse{
+        font-size: 20px;
+    }
+    nav ul{
+        position: fixed;
+        top:30px;
+        right: -100% ;
+        background: rgb(255, 255, 255);
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    .heading{
+        text-align: center;
+        font-size: 30px;
+        padding: 80px 0;
+    }
+    #profile-id .profiles{
+        margin-top: -90px;
+    }
+    .certificates{
+        margin-top: -100px;
+    }
+    
+ }
