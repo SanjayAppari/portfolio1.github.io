@@ -60,12 +60,12 @@ nav .menu-bar i{
     display: none;
 }
 
-
 .home{
     background: url("images/backg2.png");
     background-size:cover;
     background-repeat: no-repeat;
     display: flex;
+    padding-bottom: 95px;
 }
 .home .h1{
     flex:50%;
@@ -117,9 +117,14 @@ nav .menu-bar i{
 .heading{
     text-align: center;
     font-size: 40px;
+    /* font-weight: 200; */
     padding: 20px 0;
     padding-top: 50px;
+    color: rgb(18,97,225);
+    /* animation: glow-effect 1s linear infinite; */
 }
+
+
 /* about me css  */
 #about-id{
     background: url("images/backg2.png");
@@ -343,15 +348,18 @@ nav .menu-bar i{
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    /* padding: 3px; */
 }
 .contact-container{
     margin: 100px;
+    margin-top: 125px;
+    margin-bottom: 20px;
     width: 80%;
     background-color: #fff;
     border-radius: 6px;
     padding: 20px 60px 40px 40px;
     box-shadow:0 0 0.3em rgb(18, 97, 225);
+    /* padding-bottom: 0px; */
 }
 .contact-container .contact-content{
     display: flex;
@@ -445,6 +453,57 @@ nav .menu-bar i{
 .right-side .button a{
     padding: 8px;
 }
+
+/* social media icons css  */
+.social-media{
+    background: url("images/backg2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.social-media .heading{
+    padding: 15px;
+    font-size: 30px;
+}
+.social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.social-container .social-main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.social-container .social-box {
+    /* border: 2px solid red; */
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow:0 0 10px   rgb(18, 97, 225);
+    margin-bottom: 3px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.social-box i{
+    font-size: 40px;
+    color: rgb(18, 97, 225);
+}
+.social-box i:hover{
+    color: rgb(18, 97, 225,0.7);
+}
+.social-main-box .social-title h4{
+    color: rgb(18, 97, 225);
+}
 /* media quiries */
  @media (max-width:800px){
    html,body{
@@ -475,14 +534,12 @@ nav .menu-bar i{
     #click:checked ~ ul{
         right:0%;
     }
-    nav ul li:checked ~ ul{
-        right: 100%;
-    }
+    
     nav ul li{
         margin:40px 0;
     }
-    nav ul li a{
-        display: block;
+    nav .menu-list{
+        overflow:hidden;
     }
     .home{
         flex-direction: column;
@@ -559,6 +616,20 @@ nav .menu-bar i{
     .about-content p{
         font-size: 25px;
     }
+    /* social media css  */
+    .social-media .heading{
+        font-size: 17.5px;
+    }
+    .social-main-box .social-box{
+        width: 55px;
+        height: 55px;
+    }
+    .social-box i{
+        font-size: 30px;
+    }
+    .social-title h4{
+        font-size: 13px;
+    }
  }
  @media (max-width:330px){
     .contact-container .contact-content .right-side{
@@ -618,3 +689,4 @@ nav .menu-bar i{
     }
     
  }
+
