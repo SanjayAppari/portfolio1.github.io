@@ -24,12 +24,12 @@
             <i class="fa-solid fa-bars"></i>
         </label>
         <ul>
-            <li><a class="activeh" href="#hid">Home</a></li>
-            <li><a href="#about-id">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#profile-id">Profiles</a></li>
-            <li><a href="#cert-id">Certificates</a></li>
-            <li><a href="#contact-id">Contact</a></li>
+            <label for="click2" class="menu-list"><li><a class="activeh" href="#hid">Home</a></li></label>
+            <label for="click2" class="menu-list"><li><a href="#about-id">About</a></li></label>
+            <label for="click2" class="menu-list"><li><a href="#skills">Skills</a></li></label>
+            <label for="click2" class="menu-list"><li><a href="#profile-id">Profiles</a></li></label>
+            <label for="click2" class="menu-list"><li><a href="#cert-id">Certifications</a></li></label>
+            <label for="click2" class="menu-list"><li><a href="#contact-id">Contact</a></li></label>
         </ul>
     </nav>
 
@@ -42,7 +42,7 @@
              <h1 id="hello" style="font-family: 'Rubik', sans-serif;">HELLO</h1><br>
              <h1 id="name" style="color: rgb(18, 97, 225) ;">I AM SANJAY</h1><br>
              <h1 id="cse" style="font-family: 'Rubik', sans-serif;">COMPUTER SCIENCE STUDENT</h1><br><br>
-             <a href="https://resume.io/r/lcFvGzhNA" target="_blank"  class="mybtn">DOWNLOAD CV</a>
+             <a href="https://resume.io/r/lcFvGzhNA" target="_blank"  class="mybtn">DOWNLOAD RESUME</a>
           </div>
         </div>
     </div> 
@@ -52,7 +52,7 @@
       <div class="about-container1">
        <div class="about-container">
           <div class="about-content">
-             <h2>CODER & JUNIOR WEB DEVLOPER</h2>
+             <h2>CODER & JUNIOR WEB DEVELOPER</h2>
              <br>
              <p>I'm an aspiring Full Stack Developer and a Competitive Programmer </p>
           </div>
@@ -177,7 +177,7 @@
         <i class="fa-solid fa-star" ></i>
         <i class="fa-solid fa-star" ></i>
         <i class="fa-solid fa-star"></i><br><br>
-         <p>I Know Basic Syntax of SQL Quiries.</p>
+         <p>I Know Basic Syntax of SQL Queries.</p>
       </div>
    </div>
    <div class="skills-box">
@@ -217,9 +217,9 @@
               <div class="back">
                 <div class="back-content">
                   
-                  <h3>GLOBAL RANK : 23825</h3>
-                  <h3>COUNTRY RANK : 21455</h3>
-                  <h3>HIGHEST RATING : 1655</h3><br><br>
+                  <h4>GLOBAL RANK : 23825</h4>
+                  <h4>COUNTRY RANK : 21455</h4>
+                  <h4>HIGHEST RATING : 1655</h4><br><br>
                   <a href="https://www.codechef.com/users/sanjay_appari" target="_blank" class="mybtn">VIEW PROFILE</a>
                 </div>
               </div>
@@ -296,18 +296,6 @@
             <img src="images\viit_acm.png" alt=""><br>
             <a href="vignan-acm-certificate.html" target="_blank" class="mybtn">CLICK TO VIEW </a>
         </div>
-        <!-- <div class="cert-box">
-            <img src="CCDSA.png" alt=""><br>
-            <a href="#" class="mybtn">CLICK TO VIEW </a>
-        </div>
-        <div class="cert-box">
-            <img src="CCDSA.png" alt=""><br>
-            <a href="#" class="mybtn">CLICK TO VIEW </a>
-        </div>
-        <div class="cert-box">
-            <img src="CCDSA.png" alt=""><br>
-            <a href="#" class="mybtn">CLICK TO VIEW </a>
-        </div> -->
      </div>
    </div>
 
@@ -337,18 +325,22 @@
            </div>
            <div class="right-side">
              <div class="right-topic-text">Contact Me</div>
-           <form method="post" id="contactForm" class="contactForm" name="contactForm" action="mailto:apparisanjaym6@gmail.com" enctype="text/plain">
+           <!-- <form method="post" action="mailto:apparisanjaym6@gmail.com" enctype="text/plain">
+             -->
+             
+             
+             <form method="POST" id="contactForm" name="contactForm" class="contactForm" action="mailto:apparisanjaym6@gmail.com" enctype="text/plain">
              <div class="c-input-box">
-               <input type="text" name="name" id="name" placeholder="Name">
+               <input type="text" name ="name" id="name" placeholder="Name">
              </div>
              <div class="c-input-box">
-              <input type="text" name="email" id="email" placeholder="Email">
+              <input type="text" name ="email" id="email" placeholder="Email">
              </div>
              <div class="c-input-box message-box">
-              <textarea id="message" name="subject"></textarea>
+              <textarea id="message" name ="subject"></textarea>
              </div>
              <div class="button">
-              <button id="btn" type="submit">SEND ME</button>
+               <button class="button" type="submit">Send Me</button>
              </div>
            </form>
           </div>
@@ -357,11 +349,53 @@
    </div>
 
    <!-- social media handles  -->
-   <footer>
-      <div class="sm-container">
-          
+  <div class="social-media">
+   <div class="heading">SOCIAL MEDIA HANDLES</div>
+   <div class="social-container">
+    
+
+   <div class="social-main-box">
+      <div class="social-box">
+         <a href="https://www.linkedin.com/in/sanjay-appari-6b6696208/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
-   </footer>
+      <div class="social-title">
+        <h4>Linkedin</h4>
+     </div>
+  </div>
+  <div class="social-main-box">
+   <div class="social-box">
+      <a href="https://github.com/SanjayAppari" target="_blank"><i class="fa-brands fa-github"></i></a>
+   </div>
+   <div class="social-title">
+     <h4>Github</h4>
+   </div>
+  </div>
+  <div class="social-main-box">
+   <div class="social-box">
+        <a href="https://www.instagram.com/_sanjay_appari/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+   </div>
+   <div class="social-title">
+     <h4>Instagram</h4>
+  </div>
+  </div>
+  <div class="social-main-box">
+   <div class="social-box">
+      <a href="https://twitter.com/AppariSanjay" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+   </div>
+   <div class="social-title">
+     <h4>Twitter</h4>
+   </div>
+  </div>
+  <div class="social-main-box">
+   <div class="social-box">
+      <a href="https://www.instagram.com/telugumemesbabai/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+   </div>
+   <div class="social-title">
+     <h4>Meme Page</h4>
+  </div>
+  </div>
+   </div>
+  </div>
   
 </body>
   
