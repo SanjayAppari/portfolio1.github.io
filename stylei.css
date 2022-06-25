@@ -630,6 +630,9 @@ nav .menu-bar i{
     .social-title h4{
         font-size: 13px;
     }
+     .heading{
+        font-size: 33px;
+    }
  }
  @media (max-width:330px){
     .contact-container .contact-content .right-side{
