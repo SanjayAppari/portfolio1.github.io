@@ -630,8 +630,42 @@ nav .menu-bar i{
     .social-title h4{
         font-size: 13px;
     }
-     .heading{
+    .heading{
         font-size: 25px;
+    }
+ }
+ @media (max-width:390px){
+    nav{
+        height: 30px;
+    }
+    nav .logo{
+        font-size:25px
+    }
+    nav .menu-bar{
+        font-size: 20px;
+    }
+    .home .h1 img{
+        height:300px; 
+        width:250px;
+     }
+    .h2 .homecontent #hello{
+        font-size: 20px;
+    }
+    .h2 .homecontent #name{
+        font-size: 50px;
+    }
+    .h2 .homecontent #cse{
+        font-size: 20px;
+    }
+    nav ul{
+        position: fixed;
+        top:30px;
+        right: -100% ;
+        background: rgb(255, 255, 255);
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
     }
  }
  @media (max-width:330px){
