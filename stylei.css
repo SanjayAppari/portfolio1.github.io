@@ -65,7 +65,7 @@ nav .menu-bar i{
     background-size:cover;
     background-repeat: no-repeat;
     display: flex;
-    padding-bottom: 95px;
+    padding-bottom: 90px;
 }
 .home .h1{
     flex:50%;
@@ -74,8 +74,8 @@ nav .menu-bar i{
     align-items: center;
 }
 .home .h1 img{
-    height:600px; 
-    width:500px;
+    height:700px; 
+    width:600px;
  }
 .home .h2{
    margin: auto auto;
@@ -85,13 +85,13 @@ nav .menu-bar i{
     text-align: center;
 }
 .h2 .homecontent #hello{
-    font-size:30px
+    font-size:35px
 }
 .h2 .homecontent #name{
-    font-size: 70px;
+    font-size: 90px;
 }
 .h2 .homecontent #cse{
-    font-size: 30px;
+    font-size: 35px;
 }
 
 /* button css */
